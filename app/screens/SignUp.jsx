@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { Text, View, StyleSheet, TouchableOpacity, Image, TextInput } from "react-native";
 
 export default function SignUp({ navigation }) {
-    const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
 
@@ -13,12 +13,12 @@ export default function SignUp({ navigation }) {
           source={require("../../assets/images/logo2.png")}
         />
         <View style={styles.formContainer}>
-        <Text style={styles.subtitle}>Email</Text>
-            <TextInput
-            style={styles.input}
-            value={email}
-            onChangeText={setEmail}
-            />
+        <Text style={styles.subtitle}>Username</Text>
+        <TextInput
+        style={styles.input}
+        value={username}
+        onChangeText={setUsername}
+        />
             <Text style={styles.subtitle}>Password</Text>
             <TextInput
             style={styles.input}

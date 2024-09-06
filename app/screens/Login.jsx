@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, TouchableOpacity,Image } from "react-native";
 import { TextInput } from 'react-native-web';
 
 export default function Login({ navigation }) {
-    const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
   return (
     <View style={styles.container}>
@@ -12,11 +12,11 @@ export default function Login({ navigation }) {
       source={require("../../assets/images/logo2.png")}
     />
     <View style={styles.formContainer}>
-    <Text style={styles.subtitle}>Email</Text>
+    <Text style={styles.subtitle}>Username</Text>
         <TextInput
         style={styles.input}
-        value={email}
-        onChangeText={setEmail}
+        value={username}
+        onChangeText={setUsername}
         />
         <Text style={styles.subtitle}>Password</Text>
         <TextInput
